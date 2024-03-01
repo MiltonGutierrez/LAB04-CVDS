@@ -15,7 +15,15 @@ public class OriginalScore implements GameScore {
      * @throws IllegalArgumentExcepton si se tienen parametros negativos.
      */
     public int calculateScore(int correctCount, int incorrectCount) {
-        return 0;
+        // Verifica que los parámetros sean válidos
+        if (correctCount < 0 || incorrectCount < 0) {
+            throw new IllegalArgumentException("Los parámetros no pueden ser negativos.");
+        }
+
+        // Calcula el puntaje
+        int score = 100 - (incorrectCount * 10);
+        // Si el puntaje es negativo, lo establece en cero
+        return Math.max(0, score);
     }
     
 }

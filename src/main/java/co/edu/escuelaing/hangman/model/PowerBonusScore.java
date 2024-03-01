@@ -15,7 +15,17 @@ public class PowerBonusScore implements GameScore {
      * @throws IllegalArgumentExcepton si se tienen parametros negativos.
      */
     public int calculateScore(int correctCount, int incorrectCount) {
-        return 0;
+        // Verifica que los parámetros sean válidos
+        if (correctCount < 0 || incorrectCount < 0) throw new IllegalArgumentException("Los parámetros no pueden ser negativos.");
+        int score = 0;
+        for (int i = 1 ; i <= correctCount; i++){
+            score += Math.pow(5, i);
+        }
+        score -= 8 * incorrectCount;
+        if (score <= 0 ) return 0;
+        else if (score >= 500) return  500;
+        return score;
+        
     }
     
 }

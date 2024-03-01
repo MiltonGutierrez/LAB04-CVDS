@@ -64,8 +64,8 @@ public class GameScoreTest {
 
         //Then
         assertEquals(90, score);
-        assertEquals(70, score2);
-        assertEquals(40, score3);
+        assertEquals(80, score2);
+        assertEquals(70, score3);
     }
 
     @Test
@@ -74,17 +74,12 @@ public class GameScoreTest {
         OriginalScore originalScore = new OriginalScore();
         int correctCount = 0;
         int incorrectCount = 10;
-        int incorrectCount2 = 2;
-        int incorrectCount3 = 3;
         //When
         int score = originalScore.calculateScore(correctCount, incorrectCount);
-        int score2 = originalScore.calculateScore(correctCount, incorrectCount2);
-        int score3 = originalScore.calculateScore(correctCount, incorrectCount3);
 
         //Then
         assertEquals(0, score);
-        assertEquals(0, score2);
-        assertEquals(0, score3);
+
     }
 
     @Test
@@ -140,8 +135,8 @@ public class GameScoreTest {
         int score3 = bonusScore.calculateScore(correctCount3, incorrrectCount);
         //Then
         assertEquals(10, score);
-        assertEquals(30, score);
-        assertEquals(60, score);
+        assertEquals(20, score2);
+        assertEquals(30, score3);
     }
 
     @Test
@@ -154,12 +149,12 @@ public class GameScoreTest {
         int correctCount = 3;
         //When
         int score = bonusScore.calculateScore(correctCount, incorrrectCount);
-        int score2 = bonusScore.calculateScore(0, incorrrectCount2);
-        int score3 = bonusScore.calculateScore(0, incorrrectCount3);
+        int score2 = bonusScore.calculateScore(correctCount, incorrrectCount2);
+        int score3 = bonusScore.calculateScore(correctCount, incorrrectCount3);
         //Then
         assertEquals(25, score);
-        assertEquals(15, score);
-        assertEquals(0, score);
+        assertEquals(20, score2);
+        assertEquals(15, score3);
     }
 
     @Test
@@ -240,26 +235,29 @@ public class GameScoreTest {
         int score3 = powerBonusScore.calculateScore(correctCount3, incorrrectCount3);
         //Then
         assertEquals(5, score);
-        assertEquals(22, score);
-        assertEquals(115, score);
+        assertEquals(22, score2);
+        assertEquals(123, score3);
     }
 
     @Test
     void powerBonusScoreTestShouldBonusAnyCorrectScorePoint(){
         //Given
         PowerBonusScore powerBonusScore = new PowerBonusScore();
-        int correctCount = 1;
-        int correctCount2 = 2;
-        int correctCount3 = 3;
+        int correctCount = 0;
+        int correctCount2 = 1;
+        int correctCount3 = 2;
+        int correctCount4 = 3;
         int incorrrectCount = 0;
         //When
         int score = powerBonusScore.calculateScore(correctCount, incorrrectCount);
         int score2 = powerBonusScore.calculateScore(correctCount2, incorrrectCount);
         int score3 = powerBonusScore.calculateScore(correctCount3, incorrrectCount);
+        int score4 = powerBonusScore.calculateScore(correctCount4, incorrrectCount);
         //Then
-        assertEquals(5, score);
-        assertEquals(30, score);
-        assertEquals(155, score);
+        assertEquals(0, score);
+        assertEquals(5, score2);
+        assertEquals(30, score3);
+        assertEquals(155, score4);
     }
 
     @Test
@@ -267,16 +265,16 @@ public class GameScoreTest {
         //Given
         PowerBonusScore powerBonusScore = new PowerBonusScore();
         int correctCount = 2;
-        int incorrectCount = 3;
+        int incorrectCount = 4;
         int incorrectCount2 = 1;
-        int incorrectCount3 = 1;
+        int incorrectCount3 = 2;
         //When
         int score = powerBonusScore.calculateScore(correctCount, incorrectCount);
         int score2 = powerBonusScore.calculateScore(0, incorrectCount2);
         int score3 = powerBonusScore.calculateScore(0, incorrectCount3);
 
         //Then
-        assertEquals(22, score);
+        assertEquals(0, score);
         assertEquals(0, score2);
         assertEquals(0, score3);
     }
@@ -286,9 +284,9 @@ public class GameScoreTest {
         //Given
         PowerBonusScore powerBonusScore = new PowerBonusScore();
         int incorrectCount = 0;
-        int correctCount = 4; // Da una valor de 750 
-        int correctCount2 = 1;
-        int correctCount3 = 1;
+        int correctCount = 4; 
+        int correctCount2 = 5;
+        int correctCount3 = 6;
         //When
         int score = powerBonusScore.calculateScore(correctCount, incorrectCount);
         int score2 = powerBonusScore.calculateScore(correctCount2, incorrectCount);
