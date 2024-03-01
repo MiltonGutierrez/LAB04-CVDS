@@ -44,48 +44,54 @@ principio de inversión de dependencias:
 2. A partir del código existente, implemente sólo los cascarones del
    modelo antes indicado.
 
-3. Haga la especificación de los métodos calculateScore (de las tres
+4. Haga la especificación de los métodos calculateScore (de las tres
    variantes de GameScore), a partir de las especificaciones
    generales dadas anteriormente. Recuerde tener en cuenta: @pre,
    @pos, @param, @throws.
 
-4. Haga commit de lo realizado hasta ahora. Desde la terminal:
+![image2][2]
+![image3][3]
+![image4][4]
+
+5. Haga commit de lo realizado hasta ahora. Desde la terminal:
 
     ```sh		
     git add .			
     git commit -m "especificación métodos"
     ```
 
-5. Actualice el archivo `pom.xml` e incluya las dependencias para la ultima versión de JUnit.
+6. Actualice el archivo `pom.xml` e incluya las dependencias para la ultima versión de JUnit.
 
-6. Teniendo en cuenta dichas especificaciones, en la clase donde se
+![image5][5]
+
+7. Teniendo en cuenta dichas especificaciones, en la clase donde se
    implementarán las pruebas (GameScoreTest), en los
    comentarios iniciales, especifique las clases de equivalencia para
    las tres variantes de GameScore, e identifique
    condiciones de frontera.
 
-7. Para cada clase de equivalencia y condición de frontera, implemente
+8. Para cada clase de equivalencia y condición de frontera, implemente
    una prueba utilizando JUnit.
 
-8. Haga commit de lo realizado hasta ahora. Desde la terminal:
+9. Haga commit de lo realizado hasta ahora. Desde la terminal:
 
     ```sh		
     git add .			
     git commit -m "implementación pruebas"
     ```
 
-9. Realice la implementación de los 'cascarones' realizados anteriormente.
+10. Realice la implementación de los 'cascarones' realizados anteriormente.
    Asegúrese que todas las pruebas unitarias creadas en los puntos anteriores
    se ejecutan satisfactoriamente.
 
-10. Al finalizar haga un nuevo commit:
+11. Al finalizar haga un nuevo commit:
 
     ```sh		
     git add .			
     git commit -m "implementación del modelo"
     ```
 
-11. Para sincronizar el avance en el respositorio y NO PERDER el trabajo, use
+12. Para sincronizar el avance en el respositorio y NO PERDER el trabajo, use
     el comando de GIT para enviar los cambios:
 
     ```sh
@@ -110,3 +116,10 @@ constructor de la clase GUI y HangmanFactoryMethod).
     * Utilizar el idioma francés.
     * Utilizar el diccionario francés.
     * etc...
+  
+[1]: https://github.com/MiltonGutierrez/LAB04-CVDS/blob/main/resources/1.png
+[2]: https://github.com/MiltonGutierrez/LAB04-CVDS/blob/main/resources/2.png
+[3]: https://github.com/MiltonGutierrez/LAB04-CVDS/blob/main/resources/3.png
+[4]: https://github.com/MiltonGutierrez/LAB04-CVDS/blob/main/resources/4.png
+[5]: https://github.com/MiltonGutierrez/LAB04-CVDS/blob/main/resources/5.png
+
