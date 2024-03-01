@@ -59,6 +59,7 @@ principio de inversión de dependencias:
     git add .			
     git commit -m "especificación métodos"
     ```
+![image6][6]
 
 6. Actualice el archivo `pom.xml` e incluya las dependencias para la ultima versión de JUnit.
 
@@ -70,8 +71,16 @@ principio de inversión de dependencias:
    las tres variantes de GameScore, e identifique
    condiciones de frontera.
 
+![image7][7]
+![image8][8]
+![image8][9]
+
 8. Para cada clase de equivalencia y condición de frontera, implemente
    una prueba utilizando JUnit.
+
+![image10][10]
+![image11][11]
+![image12][12]
 
 9. Haga commit de lo realizado hasta ahora. Desde la terminal:
 
@@ -79,10 +88,16 @@ principio de inversión de dependencias:
     git add .			
     git commit -m "implementación pruebas"
     ```
+    
+![image13][13]
 
 10. Realice la implementación de los 'cascarones' realizados anteriormente.
    Asegúrese que todas las pruebas unitarias creadas en los puntos anteriores
    se ejecutan satisfactoriamente.
+
+![image14][14]
+![image15][15]
+![image16][16]
 
 11. Al finalizar haga un nuevo commit:
 
@@ -97,6 +112,7 @@ principio de inversión de dependencias:
     ```sh
     git push origin main
     ```
+
 
 ### Parte II
 
@@ -122,4 +138,14 @@ constructor de la clase GUI y HangmanFactoryMethod).
 [3]: https://github.com/MiltonGutierrez/LAB04-CVDS/blob/main/resources/3.png
 [4]: https://github.com/MiltonGutierrez/LAB04-CVDS/blob/main/resources/4.png
 [5]: https://github.com/MiltonGutierrez/LAB04-CVDS/blob/main/resources/5.png
-
+[6]: https://github.com/MiltonGutierrez/LAB04-CVDS/blob/main/resources/metodos.png
+[7]: https://github.com/MiltonGutierrez/LAB04-CVDS/blob/main/resources/OriginalScore%20Test.PNG
+[8]: https://github.com/MiltonGutierrez/LAB04-CVDS/blob/main/resources/BonusScore%20Test.PNG
+[9]: https://github.com/MiltonGutierrez/LAB04-CVDS/blob/main/resources/PowerScore%20Test.PNG
+[10]: https://github.com/MiltonGutierrez/LAB04-CVDS/blob/main/resources/Pruebas%20Original.PNG
+[11]: https://github.com/MiltonGutierrez/LAB04-CVDS/blob/main/resources/Pruebas%20Bonus.PNG
+[12]: https://github.com/MiltonGutierrez/LAB04-CVDS/blob/main/resources/Pruebas%20PB.PNG
+[13]: https://github.com/MiltonGutierrez/LAB04-CVDS/blob/main/resources/implemetacion%20pruebas.png
+[14]: https://github.com/MiltonGutierrez/LAB04-CVDS/blob/main/resources/PowerI.PNG
+[15]: https://github.com/MiltonGutierrez/LAB04-CVDS/blob/main/resources/OriginalI.PNG
+[16]: https://github.com/MiltonGutierrez/LAB04-CVDS/blob/main/resources/BonusI.PNG
